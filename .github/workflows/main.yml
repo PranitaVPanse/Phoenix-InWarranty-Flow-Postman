@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron : 30 02 * * *      # 8AM IST
-    - cron : 00 14 * * *      # 7:30PM IST
-    - cron : 00 13 * * 1-5    # Only from Mon to Fri
+   # - cron : 00 14 * * *      # 7:30PM IST
+  #  - cron : 00 13 * * 1-5    # Only from Mon to Fri
 
 jobs:
   run-phoenix-tests:
