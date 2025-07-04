@@ -32,7 +32,8 @@ jobs:
             newman run InWarranty-Flow-Collection.postman_collection.json \
             -e QA.postman_environment.json \
             -d TestData.csv \
-            -r cli,htmlextra
+            -r cli,htmlextra \
+            --reporter-htmlextra-export ./newman/index.html
 
      - name : Archive the Newman report
        if: always()
